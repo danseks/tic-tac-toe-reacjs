@@ -1,13 +1,171 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-/* 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 1.5rem;
+  background-image: url(https://i.pinimg.com/originals/e3/40/92/e34092e75a7441cc12fed06a546c34b5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h3{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-*/
+
+.modal-backdrop {
+      background-image: url(https://i.pinimg.com/originals/e3/40/92/e34092e75a7441cc12fed06a546c34b5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    opacity:1 !important;
+}
+
+.modal-content{
+    background-color: transparent;
+    border: none;
+}
+
+.buttonXO,
+.buttonXO:hover,
+.buttonXO:visited,
+.buttonXO:active,
+.buttonXO:focus {
+  background-color: transparent !important;
+  outline: none;
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: aquamarine;
+  width: 8rem;
+
+}
+
+.buttonX,
+.buttonX:hover,
+.buttonX:visited,
+.buttonX:active,
+.buttonX:focus {
+  background-color: transparent !important;
+    outline: none;
+   box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: aqua;
+  width: 8rem;
+
+}
+
+.buttonX{
+    font-size: 4rem;
+}
+
+.buttonXO{
+    font-size: 4rem;
+}
+
+
+.modal-h3{
+    color: white;
+    margin-bottom: 4rem;
+}
+
+
+.buttonSquare,
+.buttonSquare:hover,
+.buttonSquare:visited,
+.buttonSquare:active,
+.buttonSquare:focus  {
+  background-color: transparent !important;
+   box-shadow: none;
+     outline: none;
+  border-color: white;
+  width: 8rem;
+  height: 8rem;
+  font-size: 3.5rem;
+
+}
+
+.buttonSquareWinner,
+.buttonSquareWinner:hover,
+.buttonSquareWinner:visited,
+.buttonSquareWinner:active,
+.buttonSquareWinner:focus  {
+  background-color:#75FF33;
+   box-shadow: none;
+     outline: none;
+  border-color: white;
+  width: 8rem;
+  height: 8rem;
+  font-size: 3.5rem;
+}
+.tableGame{
+    padding-top: 6.5rem;
+}
+
+.buttonMenu:hover,
+.buttonMenu:visited,
+.buttonMenu:active,
+.buttonMenu:focus {
+  background-color: transparent !important;
+  outline: none;
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: aquamarine;
+  width: 8rem;
+}
+
+.buttonMenu{
+  background-color: transparent !important;
+  outline: none;
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+  width: 8rem;
+  font-size: 1.2rem;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  font-size: 1.2rem;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #818078;
+    background-color: #fcfcfa;
+  }
+}
