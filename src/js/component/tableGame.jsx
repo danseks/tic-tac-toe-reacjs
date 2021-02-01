@@ -36,7 +36,7 @@ const TableGame = ({ oxPlayer, openModal }) => {
 	useEffect(
 		() => {
 			if (winner == "O" || winner == "X") {
-				setOxMessage("And the big winner was the " + winner + " 🏆");
+				setOxMessage("The Winner is... " + winner + " 🏆");
 				setTimeout(() => {
 					setOXNext(true);
 					setSquareArr(Array(9).fill(null));
@@ -48,7 +48,7 @@ const TableGame = ({ oxPlayer, openModal }) => {
 						setSquareArr(Array(9).fill(null));
 					}, 3000);
 				} else {
-					if (oxNext == true) {
+					if (oxNext) {
 						setOxMessage("Now it is the turn of X 👈");
 					} else {
 						setOxMessage("Now it is the turn of O 👈");
