@@ -5,11 +5,11 @@ import { WinnerSelect } from "./helper.jsx";
 import PropTypes from "prop-types";
 
 const TableGame = ({ oxPlayer, openModal }) => {
-	const [squareArr, setSquareArr] = useState(Array(9).fill(null)); //array inicial
-	const [oxNext, setOXNext] = useState(true); // selección de jugador
+	const [squareArr, setSquareArr] = useState(Array(9).fill(null));
+	const [oxNext, setOXNext] = useState(true);
 	const [oxMessage, setOxMessage] = useState("");
 
-	const winningInfo = WinnerSelect(squareArr); //logica del ganador
+	const winningInfo = WinnerSelect(squareArr);
 	const winner = winningInfo.winner;
 	const winnerHighlight = winningInfo.line;
 
